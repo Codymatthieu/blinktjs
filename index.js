@@ -2,8 +2,8 @@ var ipfsAPI = require('ipfs-api');
 var ipfs = ipfsAPI('localhost', '5001', {protocol: 'http'});
 const topic = 'general';
 
-const Blinkt = require('blinktjs');
-const blinkt = new Blinkt();
+var Blinkt = require('blinktjs');
+var blinkt = new Blinkt();
 
 blinkt.setup();
 blinkt.clearAll();
