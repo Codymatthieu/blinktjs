@@ -12,12 +12,12 @@ const receiveMsg = (msg) => {
   console.log(msg.data.toString());
 
   if(msg.data.toString() == "on") {
-    blinkt.setAllPixels(0, 0, 255, .5);
-    blinkt.sendUpdate();
+    blinkt.setAll(0, 0, 255);
+    blinkt.draw();
   }
   else if (msg.data.toString() == "off") {
-    blinkt.setAllPixels(0, 0, 0, 0);
-    blinkt.sendUpdate();
+    blinkt.setAll(0, 0, 0);
+    blinkt.draw();
   }
 }
 
